@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keonhee'sBirthDay2026makeHp</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Jua&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="destyle.css">
+    <link rel="stylesheet" href="letter.css">
+</head>
+<body>
+    <div class="container">
+        <div class="letterBox" id="letterBox">
+            <img src="img/envelope_opend.png" alt="envelope">
+            <p class="txtUI">tap to read</p>
+        </div>
+    <!-- modal -->
+        <div class="modal" id="modal">
+            <div class="letterset">
+                <img class="invitation" src="img/invitation.png" alt="invitation">
+                <!-- close btn -->
+                <span class="closebtn" id="closebtn"></span>
+            </div>
+        </div>
+        
+        <!-- select -->
+         <div class="blackoutOverlay" id="blackoutOverlay">
+            <div class="quizPopup" id="quizPopup">
+                <p class="quiz">준비 됐나요?</p>
+                <div class="quizBtns">
+                    <button class="yesBtn" id="yesBtn">네</button>
+                    <button class="noBtn" id="noBtn">아니요</button>
+                </div>
+            </div>
+            <!-- liarpopup -->
+             <div class="liarPopup" id="liarPopup">
+                <p class="lierTxt">엥?<br>거짓말~</p>
+                    <p class="tapGuide" id="tapGuide">tap!</p>
+                </div>
+             </div>
+         </div>
+    </div>  
+
+<script src="letter.js"></script>
+
+</body>
+</html>
