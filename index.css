@@ -1,0 +1,144 @@
+@charset "UTF-8" ;
+body {
+    background-color: #FFFCEC;
+    font-size: 62.5%;
+}
+
+.toppage {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.topText {
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.txt1 {
+    font-size: 1.6rem;
+    animation: text1 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes text1 {
+	0% {
+		opacity: 0;
+		transform: scale(0.3) translateY(150%);
+	}
+	30% {
+		opacity: 1;
+	}
+	75% {
+		transform: scale(1.5) translateY(-30%);
+	}
+	100% {
+		transform: scale(1) translateY(0);
+	}
+}
+
+.txt2 {
+    font-size: 1.2rem;
+    margin-top: 20%;
+    animation: text1 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+    animation-delay: 0.8s;
+}
+
+@keyframes text2 {
+	0% {
+		opacity: 0;
+		transform: scale(0.3) translateY(150%);
+	}
+	30% {
+		opacity: 1;
+	}
+	75% {
+		transform: scale(1.5) translateY(-30%);
+	}
+	100% {
+		transform: scale(1) translateY(0);
+	}
+}
+
+/*スクロールダウン全体の場所*/
+.scrolldown{
+    /*描画位置※位置は適宜調整してください*/
+	position:absolute;
+	bottom:1%;
+	right:50%;
+    /*矢印の動き1秒かけて永遠にループ*/
+	animation: arrowmove 1s ease-in-out infinite;
+}
+
+/*下からの距離が変化して全体が下→上→下に動く*/
+@keyframes arrowmove{
+      0%{bottom:1%;}
+      50%{bottom:3%;}
+     100%{bottom:1%;}
+ }
+
+/*Scrollテキストの描写*/
+.scrolldown span{
+    /*描画位置*/
+	position: absolute;
+	left:-20px;
+	bottom:20px;
+    /*テキストの形状*/
+	color: #283690;
+	font-size: 0.7rem;
+	letter-spacing: 0.05em;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+	/*縦書き設定*/
+	-ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+/* 矢印の描写 */
+.scrolldown:before {
+    content: "";
+    /*描画位置*/
+    position: absolute;
+    bottom: 0;
+    right: -6px;
+    /*矢印の形状*/
+    width: 1px;
+    height: 20px;
+    background: #283690;
+    transform: skewX(-31deg);
+}
+
+.scrolldown:after{
+	content:"";
+    /*描画位置*/
+	position: absolute;
+	bottom:0;
+	right:0;
+    /*矢印の形状*/
+	width:1px;
+	height: 70px;
+	background:#283690;
+}
+
+.envelopeClosed {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.txtUI {
+    margin-top: 10%;
+    font-size: 0.7rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
