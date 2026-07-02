@@ -147,6 +147,33 @@
     100% { transform: translateX(-50%) translateY(0);}
 }
 
+.dialogModal {
+    display: none;
+    /* 画面の真ん中に浮かせる */
+  position: absolute;
+  top: 30%; 
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  /* 見た目を可愛く！ */
+  width: 80%;
+  max-width: 300px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 3px solid #ffb7c5; /* 淡いピンクの枠 */
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  z-index: 9999; /* うさぎより手前に出す */
+  cursor: pointer;
+}
+
+.dialogModal p {
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+}
 
 .envelopeDiv {
     position: absolute;
@@ -161,6 +188,24 @@
     0% { transform: translateX(-50%) translateY(0);}
     50% { transform: translateX(-50%) translateY(-10px);}
     100% { transform: translateX(-50%) translateY(0);}
+}
+
+.Uienvelope {   
+    position: absolute;
+    left: 68%;
+    margin-top: 5px;
+    animation: tenmetu 1s infinite steps(2);
+}
+
+@keyframes tenmetu {
+    0%, 100% {
+        transition: scale(1);
+        opacity: 0.2;
+    }
+    50% {
+        transition: scale(1.15);
+        opacity: 1;
+    }
 }
 
 /* modal-hidden */
