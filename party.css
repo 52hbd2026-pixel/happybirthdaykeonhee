@@ -202,7 +202,7 @@
     color: white;
     border: none;
     padding: 8px 20px;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-family: "Jua", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -219,7 +219,7 @@
     font-family: "Jua", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-align: center;
 }
 
@@ -238,9 +238,14 @@
     position: absolute;
     width: 100px;
     height: auto;
-    bottom: 100px;
-    left: 58%;
+    bottom: 130px;
+    left: 70%;
     animation: fuwa 1.5s ease-in-out infinite;
+}
+
+.envelope {
+    width: 120px;
+    height: auto;
 }
 
 @keyframes fuwa {
@@ -251,7 +256,7 @@
 
 .Uienvelope {   
     position: absolute;
-    left: 68%;
+    left: 52%;
     margin-top: 5px;
     animation: tenmetu 1s infinite steps(2);
 }
@@ -303,8 +308,8 @@
 .closeBtn {
   display: block;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 50px;
+  right: 27px;
   width: 30px;
   height: 30px;
   background: #333; /* ボタンの背景色 */
@@ -335,4 +340,37 @@
 .modal2.show {
     opacity: 1;
     pointer-events: auto;
+}
+
+.iconPhoto {
+    position: absolute;
+    width: 120px;
+    height: auto;
+    bottom: 32px;
+    left: 30%;
+    animation: fuwa3 1.5s ease-in-out infinite;
+}
+
+@keyframes fuwa3 {
+    0% { transform: translateX(-50%) translateY(0);}
+    50% { transform: translateX(-50%) translateY(-10px);}
+    100% { transform: translateX(-50%) translateY(0);}
+}
+
+.Uiphoto {
+    position: absolute;
+    left: 26%;
+    bottom: 20px;
+    animation: tenmetu3 1s infinite steps(2);
+}
+
+@keyframes tenmetu3 {
+    0%, 100% {
+        transition: scale(1);
+        opacity: 0.2;
+    }
+    50% {
+        transition: scale(1.15);
+        opacity: 1;
+    }
 }

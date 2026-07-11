@@ -1,0 +1,93 @@
+@charset "UTF-8" ;
+
+.galleryContainer {
+    padding: 80px 20px 0;
+
+}
+
+.backToparty {
+position: fixed;
+top: 0;
+left: 0;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+padding: 15px 0;
+background-color: #fff;
+width: 100vw;
+height: 120px;
+}
+
+.backToparty a::after {
+    content: "↩︎Back";
+    font-size: 1.2rem;
+    color: #333;
+    vertical-align: middle;
+}
+
+.backItem {
+    width: 50px;
+    height: auto;
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+.galleryGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    max-width: 600px;
+    margin: 45px auto 0;
+}
+
+.chekiItem img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 5px;
+    object-position: top;
+    cursor: pointer;
+    transition: transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.chekiItem img:hover {
+    transform: scale(1.03);
+}
+
+.GalleryModal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100dvh;
+    background-color: rgba(0, 0, 0, 0.85);
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+.modalContent {
+    max-width: 85%;
+    max-height: 80%;
+    object-fit: contain;
+    animation: zoomIn 0,3s ease-out;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.closeBtnPhoto {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.7); opacity: 0;}
+    to { transform: scale(1); opacity: 1;}
+}

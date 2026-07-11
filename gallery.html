@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0R9P6R3H5Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0R9P6R3H5Y');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keonhee'sBirthDay2026makeHp</title>
+    <!-- font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Jua&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="destyle.css">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <div  id="gallery" class="galleryContainer">
+        <div class="backToparty">
+            <a href="party.html">
+                <img class="backItem" src="img/uss1.png" alt="">
+            </a>
+        </div>
+        <div class="galleryGrid">
+            <div class="chekiItem" onclick="openModal('img/photo1.png')">
+                <img src="img/photo1.png" alt="cheki1">
+            </div>
+            <div class="chekiItem" onclick="openModal('img/photo2.png')">
+                <img src="img/photo2.png" alt="cheki2">
+            </div>
+            <div class="chekiItem" onclick="openModal('img/photo3.png')">
+                <img src="img/photo3.png" alt="cheki3">
+            </div>
+            <div class="chekiItem" onclick="openModal('img/photo4.png')">
+                <img src="img/photo4.png" alt="cheki4">
+            </div>
+            <div class="chekiItem" onclick="openModal('img/photo5.png')">
+                <img src="img/photo5.png" alt="cheki5">
+            </div>
+            <div class="chekiItem" onclick="openModal('img/photo6.png')">
+                <img src="img/photo6.png" alt="cheki6">
+            </div>
+            <div class="chekiItem" onclick="openModal('img/photo7.png')">
+                <img src="img/photo7.png" alt="cheki7">
+            </div>
+            <div class="chekiItem" onclick="openModal('img/photo8.png')">
+                <img src="img/photo8.png" alt="cheki8">
+            </div>
+            <div class="chekiItem" onclick="openModal('img/photo9.png')">
+                <img src="img/photo9.png" alt="cheki9">
+            </div>
+            <div class="chekiItem" onclick="openModal('img/photo10.png')">
+                <img src="img/photo10.png" alt="cheki10">
+            </div>
+        </div>
+    </div>
+    <div id="galleryModal" class="GalleryModal" onclick="closeModal()">
+        <span class="closeBtnPhoto">&times;</span>
+        <img  src="" class="modalContent" id="modalImg">
+    </div>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
