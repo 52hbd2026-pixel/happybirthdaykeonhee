@@ -147,39 +147,98 @@
     100% { transform: translateX(-50%) translateY(0);}
 }
 
-.dialogModal {
+.Uiuss {
+    position: absolute;
+    left: 48%;
+    top: 50%;
+    animation: tenmetu 1s infinite steps(2);
+}
+
+@keyframes tenmetuUss {
+    0%, 100% {
+        transition: scale(1);
+        opacity: 0.2;
+    }
+    50% {
+        transition: scale(1.15);
+        opacity: 1;
+    }
+}
+
+
+.darkOverLay {
     display: none;
-    /* 画面の真ん中に浮かせる */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9998;
+}
+
+.diaLogModal {
   position: absolute;
-  top: 30%; 
+  bottom: 15%; 
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   
   /* 見た目を可愛く！ */
   width: 80%;
-  max-width: 300px;
+  max-width: 320px;
   background-color: rgba(255, 255, 255, 0.95);
   border: 3px solid #ffb7c5; /* 淡いピンクの枠 */
   border-radius: 20px;
   padding: 20px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.1);
   text-align: center;
-  z-index: 9999; /* うさぎより手前に出す */
+  z-index: 9999; 
   cursor: pointer;
 }
 
-.dialogModal p {
+.NextBtn {
+    margin-top: 15px;
+    background-color: #ff4081;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    font-size: 1.4rem;
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.NextBtn:active {
+    transform: scale(0.95);
+}
+
+#dialogTxt {
     font-family: "Jua", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.2rem;
+    text-align: center;
+}
+
+.darkOverLay ~ .uss52 ,
+#darkOverlay[style*="display: block"] ~ .uss52, .uss52 {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 125px;
+    height: auto;
+    z-index: 9999;
 }
 
 .envelopeDiv {
     position: absolute;
     width: 100px;
     height: auto;
-    bottom: 140px;
+    bottom: 100px;
     left: 58%;
     animation: fuwa 1.5s ease-in-out infinite;
 }
